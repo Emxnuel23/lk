@@ -1,0 +1,103 @@
+<html>
+    <head>
+        <body>
+        
+          <style>
+            body, html {
+              height: 100%;
+              margin: 0;
+            }
+        
+            .contenedor {
+            display: flex;
+            flex-direction: column; 
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+          }
+
+        
+            .boton {
+              padding: 14px 40px;
+              font-size: 20px;
+              font-weight: bold;
+              color: #fff;
+              background-color: #ff4081;
+              border-radius: 8px;
+              cursor: pointer;
+              transition: transform 0.2s ease, background-color 0.3s ease;
+              box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            }
+        
+            .boton:hover {
+              transform: scale(1.1);
+              background-color: #e91e63; 
+            }
+            h1 {
+  font-size: 48px;
+  margin-bottom: 30px;
+  color: #a1a1a1;
+  text-shadow: 2px 2px 8px rgba(248, 21, 154, 0.329);
+}
+
+.decoracion {
+  position: absolute;
+  width: 140px;
+  height: auto;
+  transition: transform 0.3s ease;
+  animation: flotar 4s ease-in-out infinite;
+  z-index: 1; 
+}
+
+.decoracion:hover {
+  transform: scale(1.2); 
+}
+.contenedor {
+  position: relative; /* Agrega esto */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.decoracion1 { top: 35%; left: 30%; }
+.decoracion2 { top: 35%; right: 30%; }
+.decoracion3 { bottom: 25%; left: 35%; }
+.decoracion4 { bottom: 25%; right: 35%; }
+
+            #video-fondo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  filter: brightness(0.4); 
+}
+
+          </style>
+        </head>
+        <body>
+          
+          <video autoplay muted loop playsinline id="video-fondo">
+            <source src="6797-196071980_small.mp4" type="video/mp4">
+           
+          </video>
+
+          <div class="contenedor" >
+            <h1>Emanuel David</h1>
+            <button class="boton">ENTRAR</button>
+            <img src="Imagen de WhatsApp 2025-05-02 a las 21.58.37_401fe4c8.jpg" class="decoracion decoracion1">
+            <img src="Imagen de WhatsApp 2025-05-02 a las 21.58.38_2a6d2bdd.jpg" class="decoracion decoracion2">
+            <img src="Imagen de WhatsApp 2025-05-02 a las 21.58.38_d0450e38.jpg" class="decoracion decoracion3">
+            <img src="Imagen de WhatsApp 2025-05-02 a las 21.58.39_d0cd9fc0.jpg" class="decoracion decoracion4">
+          </div>
+          
+                
+      
+         
+           
+        </body>
+    </head> 
+</html> 
